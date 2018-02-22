@@ -10,7 +10,7 @@ import Chats from '../../api/chats/collection';
 // User
 if(Meteor.users.find().count() == 0) {
     let users = [
-        { username: 'jonsnow', password: '123456'  },
+        { username: 'staff1', password: '123456'  },
         { username: 'aryastark', password: '123456'  },
         { username: 'tyron', password: '123456'  }
     ];
@@ -19,14 +19,14 @@ if(Meteor.users.find().count() == 0) {
         Accounts.createUser(user);
     });
 
-    const jonsnow = Meteor.users.findOne({ username: 'jonsnow' });
-    const aryastark = Meteor.users.findOne({ username: 'aryastark' });
-    const tyron = Meteor.users.findOne({ username: 'tyron' });
+    const jonsnow = Meteor.users.findOne({ username: 'staff1' });
+    const aryastark = Meteor.users.findOne({ username: 'staff2' });
+    const tyron = Meteor.users.findOne({ username: 'staff3' });
 
     // Chat Rooms
     if(ChatRooms.find().count() == 0) {
-        const chatRoomId = ChatRooms.insert({ userId: jonsnow._id, title: 'Jon Snow Room', description: 'And my watch has ended.', isPubic: true });
-        const chatRoomTwoId = ChatRooms.insert({ userId: aryastark._id, title: 'Arya Stark Room', description: 'A lady has no name.', isPubic: true });
+        const chatRoomId = ChatRooms.insert({ userId: jonsnow._id, title: '10.002 Week 5', description: 'Angular nodes, Phases', isPubic: true });
+        const chatRoomTwoId = ChatRooms.insert({ userId: aryastark._id, title: '3.007 Week 5', description: 'Rapid Prototyping', isPubic: true });
 
         // Chat Room Members
         if(ChatRoomMembers.find().count() == 0) {

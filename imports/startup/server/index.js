@@ -4,7 +4,7 @@
 import './api';
 
 // Seeds
-import './seeds';
+//import './seeds';
 
 // Load routes (for Server Side Rendering)
 import './routes';

@@ -13,9 +13,10 @@ class Header extends React.Component {
     render() {
         return (
             <header>
-                <Link to="/" className="logo header-icon float-left" title="Simple Chat"><i className="material-icons">chat</i></Link>
 
-                <MenuSecondary user={ this.props.user } />
+                <h1>Give Feedback! :^)</h1>
+        		
+
             </header>
         )
     }

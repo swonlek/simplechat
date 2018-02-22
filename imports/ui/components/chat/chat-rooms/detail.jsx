@@ -146,9 +146,9 @@ class ChatRoomsDetail extends React.Component {
                         (
                             this.props.user._id
                                 ?
-                            <button type="submit" className="width100" onClick={ this.joinRoom.bind(this) }>Join this room</button>
+                            <button type="submit" className="width100" onClick={ this.joinRoom.bind(this) }>Join this session</button>
                                 :
-                            <Link to="/login"><button type="button" className="mt1 width100">Join this room</button></Link>
+                            <Link to="/login"><button type="button" className="mt1 width100">Join this session</button></Link>
                         )
                     }
                 </div>

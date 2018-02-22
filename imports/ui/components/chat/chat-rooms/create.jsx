@@ -28,7 +28,7 @@ class ChatRoomsCreate extends React.Component {
     onSubmitCreateRoom(event) {
         event.preventDefault();
 
-        console.log('E - submit form create room');
+        console.log('E - submit form create lecture');
 
         this.setState({ isLoading: true });
 
@@ -41,7 +41,7 @@ class ChatRoomsCreate extends React.Component {
 
             try {
                 ChatRoomMethods.add.call(input, (error, response) => {
-                    console.log('M - ChatRooms.add / callback');
+                    console.log('M - LectureSession.add / callback');
 
                     this.setState({ isLoading: false });
 
@@ -57,7 +57,7 @@ class ChatRoomsCreate extends React.Component {
                 this.setState({ isLoading: false, error: 'Please try again.' });
             }
         } else {
-            this.setState({ isLoading: false, error: 'Room title and description cannot be blank.' });
+            this.setState({ isLoading: false, error: 'Session title and description cannot be blank.' });
         }
     }
 
@@ -77,7 +77,7 @@ class ChatRoomsCreate extends React.Component {
                                     type="text"
                                     name="roomTitle"
                                     id="room-title"
-                                    placeholder="Room title"
+                                    placeholder="Course ID, Lecture #"
                                     autoComplete="off"
                                     required="required"
                                     onChange={ this.onChange.bind(this) }
@@ -90,7 +90,7 @@ class ChatRoomsCreate extends React.Component {
                                     type="text"
                                     name="roomDescription"
                                     id="room-description"
-                                    placeholder="Room description"
+                                    placeholder="Keywords, topics"
                                     autoComplete="off"
                                     required="required"
                                     onChange={ this.onChange.bind(this) }
@@ -99,12 +99,12 @@ class ChatRoomsCreate extends React.Component {
                             </div>
 
                             <div className="col s12 p0">
-                                <button type="submit" className="width100">Create Room</button>
+                                <button type="submit" className="width100">Start Lecture Session</button>
                             </div>
                         </div>
                     </form>
                         :
-                    <Link to="/login"><button type="button" className="mt1 width100">Create Room</button></Link>
+                    <Link to="/login"><button type="button" className="mt1 width100">Start Lecture Session</button></Link>
                 }
             </div>
         )

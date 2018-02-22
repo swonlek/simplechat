@@ -14,11 +14,14 @@ class About extends React.Component {
 
                 <h2>About</h2>
 
-                <p>A simple chat application build with Meteor and React</p>
-
-                <p>Github Repository: <a href="https://github.com/atulmy/meteor-react-simple-chat" className="tx-underlined">https://github.com/atulmy/meteor-react-simple-chat</a></p>
-
-                <p>Demo: <a href="http://meteor-react-simple-chat.demo.atulmy.com/" className="tx-underlined">http://meteor-react-simple-chat.demo.atulmy.com</a></p>
+                <p>Current version: No student/lecturer distinction. Any account can create lecture session and any account can give and view feedback.</p>
+                <p>Next step: Separating accounts. Only students can give feedback, only lecturers can view. Also, rating system</p>
+                <p>Testing Plan for Feedback feature: </p>
+                <blockquote>                     - Did not give rating. Did not enter message.<br />                     - Message length very large ( more than 500 words? )<br />                     - Message length normal (100 words)</blockquote>
+                <p>Testing Plan for login, user accounts: </p>
+                <blockquote>
+                     - Register: no id, no password, exceed password length, normal id, normal pw. Register alr existing account.<br/>
+                     - Login: wrong id, wrong password. nonexistent account. </blockquote> 
             </div>
         )
     }

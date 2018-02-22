@@ -27,7 +27,7 @@ class ChatRoomsList extends React.Component {
                 </div>
 
                 <div className="col s12 m6">
-                    <p className="tx-grey">Select a chat room to begin.</p>
+                    <p className="tx-grey">Select a lecture to give feedback.</p>
                 </div>
             </div>
         )

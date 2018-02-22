@@ -45,7 +45,8 @@ class MenuSecondary extends React.Component {
                         <li><Link to="/login" onClick={ this.openToggle.bind(this) }>Login</Link></li>
                     }
                     <li><Link to="/about" onClick={ this.openToggle.bind(this) }>About</Link></li>
-                    <li><a href="https://github.com/atulmy/meteor-react-simple-chat" target="_blank" onClick={ this.openToggle.bind(this) }>Github</a></li>
+                    <li><Link to="/" onClick={ this.openToggle.bind(this)}>Lectures</Link></li>
+                    {/*<li><Link to="/direct-messages" onClick={this.openToggle.bind(this)}> Feedback </Link></li>*/}
                 </ul>
             </div>
         )

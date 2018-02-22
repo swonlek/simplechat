@@ -4,7 +4,7 @@ import React from 'react';
 import { createContainer } from 'meteor/react-meteor-data';
 
 // App Imports
-import MenuPrimary from './primary';
+import MenuPrimary from './secondary';
 
 // Header Container
 const MenuPrimaryContainer = createContainer(() => {

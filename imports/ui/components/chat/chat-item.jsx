@@ -4,6 +4,7 @@ import moment from 'moment';
 import { Link } from 'react-router';
 
 // Chat Component
+// change { chat.user.username } to tag
 class ChatItem extends React.Component {
 
     render() {
@@ -16,7 +17,8 @@ class ChatItem extends React.Component {
                 </div>
 
                 <div className="list-footer">
-                    { chat.user.username } &bull; { moment(chat.createdAt).fromNow() }
+
+                     { moment(chat.createdAt).fromNow() }
                 </div>
             </div>
         )
