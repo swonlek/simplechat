@@ -29,7 +29,7 @@ A simple chat application built with Meteor 1.4 and ReactJS
 
 ## Running
 - Install Meteor `curl https://install.meteor.com/ | sh` (if you haven't already)
-- Clone repo `git clone git@github.com:atulmy/meteor-react-simple-chat.git simple-chat` and `cd simple-chat`
+- Clone repo `git clone https://github.com/swonlek/simplechat simple-chat` and `cd simple-chat`
 - Install NPM modules `npm install`
 - Run Meteor `meteor`
 
